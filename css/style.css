@@ -4,78 +4,182 @@
   VARIOUS SECION OF YOUR STYLING
 ----------------------------------------------*/
 
+
 /*--------------------------------------------
  GENERAL
 ----------------------------------------------*/
-body{
+
+body {
     font-family: nunito, 'sans-serif';
     margin: 0;
     font-size: 1.2rem;
+    color: #5d5d5d;
 }
 
-#wrapper{
+#wrapper {
     padding: 0;
-
 }
 
 
 /*--------------------------------------------
     NAVBAR
 ----------------------------------------------*/
-.main-nav{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.705) , rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0));
-    border-bottom: 1px solid rgba(255 ,255, 255, .8);
+
+.main-nav {
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0)); */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.192) !important;
 }
 
-.main-nav a{
-    color: #fff;
+.main-nav a {
+    color: #dbdbdb;
     font-weight: lighter;
     text-transform: uppercase;
     font-size: 14px;
 }
-.main-nav a:hover{
-   font-weight: 800;
-    
+.main-nav .social-link a {
+    color: #fff;
+    font-size: 14px;
 }
+
+.main-nav a:hover {
+    color: #fff;
+    /* font-weight: 800; */
+}
+
+
 /*--------------------------------------------
     INTRO
 ----------------------------------------------*/
- .intro{
-     height: 90vh;
- }
 
- .intro-container{
-     width: 100%;
-     height: 90vh;
- }
- .intro-container img{
-     width: 100%;
-     /* height: 100%; */
- }
+.intro {
+    height: 90vh;
+}
+
+.intro-container {
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.intro-overlay{
+    background: rgba(0, 0, 0, 0.342);
+}
+
+.intro-container img {
+    width: 100%;
+}
+
+.intro-container.learn{
+    background-image: url(../images/learn.jpg);
+  
+}
+.intro-container.do{
+    background-image: url(../images/do.jpg);
+}
+.intro-container.impact{
+    background-image: url(../images/impact.jpg);
+}
+.intro-content{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* text-align: center; */
+    color: #fff;
+}
+.intro-container .intro-text{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.466);
+}
+
+.intro-container .intro-text-sub{
+    padding-right: 6rem!important;
+}
 
 
+/* Carousel control override */
 
+.carousel-control-prev button, .carousel-control-next button{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.carousel-indicators li{
+    width: 50px;
+}
 
 /*--------------------------------------------
     FOOTER
 ----------------------------------------------*/
+
+.footer {
+    font-size: 15px;
+}
+
+
 /*--------------------------------------------
     HELPER CLASSES
 ----------------------------------------------*/
 
 
-
-
 /*--------------------------------------------
     MEDIA QUERIES
 ----------------------------------------------*/
-@media (min-width: 992px){
+
+@media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav.main-link .nav-link {
         padding-right: 2rem;
         padding-left: 2rem;
+    }
 }
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: .8rem;
-        padding-left: .8rem;
+
+
+
+/* responsive footer*/
+
+/* @media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
 }
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 576px) {}
+
+@media (max-width: 576px) {
+    .col-sm-2 {
+        margin-top: -100px!important;
+    }
+    .container {
+        max-width: 100%;
+        padding: 0;
+    }
+} */
