@@ -45,6 +45,24 @@ body {
     border-bottom: 2px solid transparent;
     
 }
+
+.main-nav a.dropdown-item{
+    color: #666 !important;
+}
+
+.main-nav .dropdown-menu{
+    top: 90%;
+}
+.main-nav .dropdown-menu::before{
+    content: "";
+    top:-34px;
+    left: 11%;
+    position: absolute;
+    border-width: 25px;
+    border-style: solid;
+    border-color: transparent transparent #ffffff transparent;
+
+}
 .main-nav .social-link a {
     color: #fff;
     font-size: 14px;
@@ -97,28 +115,31 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: .5rem;
     /* text-align: center; */
     color: #fff;
 }
 .intro-container .intro-text{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     text-shadow: 0 0 40px rgba(0, 0, 0, 0.466);
 }
 
+
 .intro-container .intro-text-sub{
-    padding-right: 6rem!important;
+    padding-right: .5rem;
 }
 
+
 .intro-btn{
-    width: 50%;
-    padding: 1rem 2rem;
+    width: 100%;
+    padding: .5rem 1rem;
     background-color: transparent;
     border: 1px solid #fff;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: .8rem;
     transition: all .3s;
     cursor: pointer;
     text-decoration: none;
@@ -196,13 +217,13 @@ body {
 
 .page-content{
     width: 100%;
-    padding: 3rem;
+    padding: 2rem 1rem;
 }
 .page-content-intro{
-   padding: 2rem;
+   padding: .5rem;
 }
 .page-content-intro h1{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 .page-content-body{
@@ -259,56 +280,53 @@ body {
     MEDIA QUERIES
 ----------------------------------------------*/
 
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav.main-link .nav-link {
+
+@media (min-width: 576px) {
+    .intro-container .intro-text-sub{
+        padding-right: 6rem;
+    }
+    .intro-content{
+        padding: 1.5rem;
+    }
+     .intro-btn{
+        width: 70%;
+        padding: .8rem 1.6rem;
+        font-size: .8rem;
+    }
+    .page-content-intro{
+        padding: 2rem;
+    }
+    .page-content-intro h1{
+        font-size: 2rem;
+    }
+    .page-content{
+        padding: 3rem;
+    }
+ }
+
+
+@media (min-width: 768px) {
+    .intro-container .intro-text{
+        font-size: 3rem;
+     
+    }
+    .intro-btn{
+        width: 50%;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+ }
+
+
+@media (min-width: 992px) {  }
+
+
+@media (min-width: 1200px) { 
+     .navbar-expand-lg .navbar-nav.main-link .nav-link {
         padding: 2rem !important;
     }
     .navbar-expand-lg .navbar-nav.social-link .nav-link {
         padding-right: .8rem !important;
         padding-left: .8rem !important;
     }
-}
-
-
-
-/* responsive footer*/
-
-/* @media (min-width: 1200px) {
-    .container {
-        max-width: 100%;
-        padding: 0;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 100%;
-        padding: 0;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        max-width: 100%;
-        padding: 0;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding: 0;
-    }
-}
-
-@media (min-width: 576px) {}
-
-@media (max-width: 576px) {
-    .col-sm-2 {
-        margin-top: -100px!important;
-    }
-    .container {
-        max-width: 100%;
-        padding: 0;
-    }
-} */
+ }
