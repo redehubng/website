@@ -1,7 +1,6 @@
-
 // SCROLL CHANGE 
 
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -12,4 +11,28 @@ function scrollFunction() {
         document.getElementById("topnav").style.backgroundColor = "rgba(255,255,255,0)";
         document.getElementById("logo").style.fontSize = "35px";
     }
-} 
+}
+
+//owl carousel function
+$(document).ready(function() {
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        // stagePadding: 25,
+        animateIn: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 3
+            }
+
+        }
+
+    });
+});
