@@ -1,82 +1,75 @@
-/*--------------------------------------------
+        /*--------------------------------------------
   REDEHUB WEBSITE GENERAL STYLE SHEET
   USE THIS COMMENT FORMAT TO COMMENT 
   VARIOUS SECION OF YOUR STYLING
 ----------------------------------------------*/
-
-
-/*--------------------------------------------
+        /*--------------------------------------------
  GENERAL
 ----------------------------------------------*/
-
-body {
-    font-family: nunito, 'sans-serif';
-    margin: 0;
-    font-size: 1.2rem;
-    color: #5d5d5d;
-    transition: all .5s;
-}
-
-#wrapper {
-    padding: 0;
-}
-
-
-/*--------------------------------------------
+        
+        body {
+            font-family: nunito, 'sans-serif';
+            margin: 0;
+            font-size: 1.2rem;
+            color: #5d5d5d;
+            transition: all .5s;
+        }
+        
+        #wrapper {
+            padding: 0;
+        }
+        /*--------------------------------------------
     NAVBAR
 ----------------------------------------------*/
-
-.main-nav {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0));
-    border-bottom: 1px solid rgba(255, 255, 255, .9) !important;
-    padding: 0;
-    position: absolute; 
-    top: 0;
-    z-index: 100; 
-    width: 100%;
-}
-
-.main-nav a {
-    color: #dbdbdb;
-    font-weight: lighter;
-    text-transform: uppercase;
-    font-size: 14px;
-    transition: all .5s;
-    border-bottom: 2px solid transparent;
-    
-}
-
-.main-nav a.dropdown-item{
-    color: #666 !important;
-}
-
-.main-nav .dropdown-menu{
-    top: 90%;
-}
-.main-nav .dropdown-menu::before{
-    content: "";
-    top:-34px;
-    left: 11%;
-    position: absolute;
-    border-width: 25px;
-    border-style: solid;
-    border-color: transparent transparent #ffffff transparent;
-
-}
-.main-nav .social-link a {
-    color: #fff;
-    font-size: 14px;
-    
-}
-
-.main-nav .main-link a:hover {
-    color: #fff;
-    border-bottom: 2px solid #fff;
-    /* font-weight: 800; */
-}
-
-
-/*--------------------------------------------
+        
+        .main-nav {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0));
+            border-bottom: 1px solid rgba(255, 255, 255, .9) !important;
+            padding: 0;
+            position: absolute;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+        }
+        
+        .main-nav a {
+            color: #dbdbdb;
+            font-weight: lighter;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: all .5s;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .main-nav a.dropdown-item {
+            color: #666 !important;
+        }
+        
+        .main-nav .dropdown-menu {
+            top: 90%;
+        }
+        
+        .main-nav .dropdown-menu::before {
+            content: "";
+            top: -34px;
+            left: 11%;
+            position: absolute;
+            border-width: 25px;
+            border-style: solid;
+            border-color: transparent transparent #ffffff transparent;
+        }
+        
+        .main-nav .social-link a {
+            color: #fff;
+            font-size: 14px;
+        }
+        
+        .main-nav .main-link a:hover {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            /* font-weight: 800; */
+        }
+        /*--------------------------------------------
     INTRO
 ----------------------------------------------*/
 
@@ -151,36 +144,25 @@ body {
     display: block;
     text-align: center;
 }
-/* .intro-btn{
-   background: #fff;
-   color: #ffdd00;
-   width: 50px;
-   height: 0px;
-} */
-
-.intro-btn:hover{
-    background-color: #fff;
-    text-decoration: none;
-    
-    color: #f4001e;
-}
-
-
-/* Carousel control override */
-
-/* .carousel-control-prev button, .carousel-control-next button{
+  
+        .intro-btn:hover {
+            background-color: #fff;
+            text-decoration: none;
+            color: #f4001e;
+        }
+        /* Carousel control override */
+        /* .carousel-control-prev button, .carousel-control-next button{
     width: 40px;
     height: 40px;
     border-radius: 20px;
     border: 0;
     background-color: rgba(0, 0, 0, 0);
 } */
-
-.carousel-indicators li{
-    width: 50px;
-}
-
-/*--------------------------------------------
+        
+        .carousel-indicators li {
+            width: 50px;
+        }
+        /*--------------------------------------------
     FOOTER
 ----------------------------------------------*/
 
@@ -217,121 +199,171 @@ body {
      text-align: center;
 }
 /*--------------------------------------------
+        
+        .main-footer {
+            background-color: #ffa000;
+            font-size: .8rem;
+            padding-top: 3rem;
+            color: #272727;
+        }
+        
+        .foot-lead {
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            margin-bottom: .5rem;
+        }
+        
+        .foot-nav .nav-item {
+            display: block;
+        }
+        
+        .foot-nav .nav-link {
+            display: inline-block;
+            padding: 0;
+            margin-bottom: 4px;
+            color: #000000;
+        }
+        
+        .foot-nav .nav-link:hover {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        /*--------------------------------------------
     PAGE CONTENT
 ----------------------------------------------*/
-
-.page-content{
-    width: 100%;
-    padding: 2rem 1rem;
-}
-.page-content-intro{
-   padding: .5rem;
-}
-.page-content-intro h1{
-    font-size: 1.5rem;
-    text-align: center;
-}
-.page-content-body{
-    padding: 2rem 0;
-}
-.page-content-foot{
-    font-size: .8rem;
-    text-align: center;
-    padding: 2rem;
-}
-
-/* summary card */
-
-.page-content-summary-card{
-    background-color: #f2f6f7;
-}
-
-.summary-card{
-    display: block;
-    background-color: #fff;
-    color: #5d5d5d;
-    padding: 1rem;
-    transition: ease-in-out .3s;
-    margin-bottom: 1rem;
-}
-
-.summary-card:hover{
-    color: #5d5d5d;
-    text-decoration: none;
-    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.075), 0 .8rem 3rem rgba(0, 0, 0, 0.096);
-}
-
-.summary-card-title{
-    text-align: center;
-    font-size: 1rem;
-    text-transform: capitalize;
-    margin-bottom: 1rem;
-}
-.summary-card-body{
-    text-align: center;
-}
-.summary-card-body img{
-    height: 150px;
-}
-
-
-
-/*--------------------------------------------
+        
+        .page-content {
+            width: 100%;
+            padding: 2rem 1rem;
+        }
+        
+        .page-content-intro {
+            padding: .5rem;
+        }
+        
+        .page-content-intro h1 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        
+        .page-content-body {
+            padding: 2rem 0;
+        }
+        
+        .page-content-foot {
+            font-size: .8rem;
+            text-align: center;
+            padding: 2rem;
+        }
+        /* summary card */
+        
+        .page-content-summary-card {
+            background-color: #f2f6f7;
+        }
+        
+        .summary-card {
+            display: block;
+            background-color: #fff;
+            color: #5d5d5d;
+            padding: 1rem;
+            transition: ease-in-out .3s;
+            margin-bottom: 1rem;
+        }
+        
+        .summary-card:hover {
+            color: #5d5d5d;
+            text-decoration: none;
+            box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.075), 0 .8rem 3rem rgba(0, 0, 0, 0.096);
+        }
+        
+        .summary-card-title {
+            text-align: center;
+            font-size: 1rem;
+            text-transform: capitalize;
+            margin-bottom: 1rem;
+        }
+        
+        .summary-card-body {
+            text-align: center;
+        }
+        
+        .summary-card-body img {
+            height: 150px;
+        }
+        /*--------------------------------------------
+   CAROUSEL style
+----------------------------------------------*/
+        
+        .owl-item {
+            padding: 20px 8px !important;
+        }
+        
+        @media (max-width:375px) {
+            .item {
+                width: 250px!important;
+            }
+            .inner {
+                padding: 15px!important;
+            }
+        }
+        
+        .item:hover {
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
+        }
+        /*--------------------------------------------
     HELPER CLASSES
 ----------------------------------------------*/
-
-
-/*--------------------------------------------
+        /*--------------------------------------------
     MEDIA QUERIES
 ----------------------------------------------*/
-
-
-@media (min-width: 576px) {
-    .intro-container .intro-text-sub{
-        padding-right: 6rem;
-    }
-    .intro-content{
-        padding: 1.5rem;
-    }
-     .intro-btn{
-        width: 70%;
-        padding: .8rem 1.6rem;
-        font-size: .8rem;
-    }
-    .page-content-intro{
-        padding: 2rem;
-    }
-    .page-content-intro h1{
-        font-size: 2rem;
-    }
-    .page-content{
-        padding: 3rem;
-    }
- }
-
-
-@media (min-width: 768px) {
-    .intro-container .intro-text{
-        font-size: 3rem;
-     
-    }
-    .intro-btn{
-        width: 50%;
-        padding: 1rem 2rem;
-        font-size: 1rem;
-    }
- }
-
-
-@media (min-width: 992px) {  }
-
-
-@media (min-width: 1200px) { 
-     .navbar-expand-lg .navbar-nav.main-link .nav-link {
-        padding: 2rem !important;
-    }
-    .navbar-expand-lg .navbar-nav.social-link .nav-link {
-        padding-right: .8rem !important;
-        padding-left: .8rem !important;
-    }
- }
+        
+        @media (min-width: 576px) {
+            .intro-container .intro-text-sub {
+                padding-right: 6rem;
+            }
+            .intro-content {
+                padding: 1.5rem;
+            }
+            .intro-btn {
+                width: 70%;
+                padding: .8rem 1.6rem;
+                font-size: .8rem;
+            }
+            .page-content-intro {
+                padding: 2rem;
+            }
+            .page-content-intro h1 {
+                font-size: 2rem;
+            }
+            .page-content {
+                padding: 3rem;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .intro-container .intro-text {
+                font-size: 3rem;
+            }
+            .intro-btn {
+                width: 50%;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (min-width: 992px) {}
+        
+        @media (min-width: 1200px) {
+            .navbar-expand-lg .navbar-nav.main-link .nav-link {
+                padding: 2rem !important;
+            }
+            .navbar-expand-lg .navbar-nav.social-link .nav-link {
+                padding-right: .8rem !important;
+                padding-left: .8rem !important;
+            }
+        }
