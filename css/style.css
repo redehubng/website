@@ -150,25 +150,19 @@
             text-decoration: none;
             color: #f4001e;
         }
-        /* Carousel control override */
-        /* .carousel-control-prev button, .carousel-control-next button{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: 0;
-    background-color: rgba(0, 0, 0, 0);
-} */
+       
         
         .carousel-indicators li {
             width: 50px;
         }
+
         /*--------------------------------------------
     FOOTER
 ----------------------------------------------*/
 
 .main-footer {
     background-color: #ffa000;
-    font-size: .8rem;
+    font-size: 1rem;
     padding-top: 3rem;
     color: #272727;
     
@@ -187,8 +181,9 @@
 .foot-nav .nav-link{
    display: inline-block;
    padding: 0;
-   margin-bottom: 4px;
+   margin-bottom: 10px;
    color: #000000;
+   font-size: 1rem;
 }
 .foot-nav .nav-link:hover{
     border-bottom: 1px solid rgba(0, 0, 0, 0.404);
@@ -198,41 +193,7 @@
      border-top: 1px solid rgba(0, 0, 0, 0.1);
      text-align: center;
 }
-/*--------------------------------------------
-        
-        .main-footer {
-            background-color: #ffa000;
-            font-size: .8rem;
-            padding-top: 3rem;
-            color: #272727;
-        }
-        
-        .foot-lead {
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            margin-bottom: .5rem;
-        }
-        
-        .foot-nav .nav-item {
-            display: block;
-        }
-        
-        .foot-nav .nav-link {
-            display: inline-block;
-            padding: 0;
-            margin-bottom: 4px;
-            color: #000000;
-        }
-        
-        .foot-nav .nav-link:hover {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.404);
-        }
-        
-        .copyright {
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+
         /*--------------------------------------------
     PAGE CONTENT
 ----------------------------------------------*/
