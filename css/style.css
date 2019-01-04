@@ -72,135 +72,128 @@
         /*--------------------------------------------
     INTRO
 ----------------------------------------------*/
-        
-        .intro {
-            height: 80vh;
-        }
-        
-        .intro-container {
-            width: 100%;
-            height: 80vh;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: left top;
-        }
-        
-        .intro-overlay {
-            background: rgba(0, 0, 0, 0.342);
-        }
-        
-        .intro-container img {
-            width: 100%;
-        }
-        
-        .intro-container.learn {
-            background-image: url(../images/learn.jpg);
-        }
-        
-        .intro-container.do {
-            background-image: url(../images/do.jpg);
-        }
-        
-        .intro-container.impact {
-            background-image: url(../images/impact.jpg);
-        }
-        
-        .intro-content {
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: .5rem;
-            /* text-align: center; */
-            color: #fff;
-        }
-        
-        .intro-container .intro-text {
-            font-size: 1.5rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            text-shadow: 0 0 40px rgba(0, 0, 0, 0.466);
-        }
-        
-        .intro-container .intro-text-sub {
-            padding-right: .5rem;
-        }
-        
-        .intro-btn {
-            width: 100%;
-            padding: .5rem 1rem;
-            background-color: transparent;
-            border: 1px solid #fff;
-            color: #fff;
-            text-transform: uppercase;
-            font-size: .8rem;
-            transition: all .3s;
-            cursor: pointer;
-            text-decoration: none;
-            display: block;
-            text-align: center;
-        }
-        /* .intro-btn{
-   background: #fff;
-   color: #ffdd00;
-   width: 50px;
-   height: 0px;
-} */
-        
+
+.intro {
+    height: 80vh;
+}
+
+.intro-container {
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.intro-overlay{
+    background: rgba(0, 0, 0, 0.342);
+}
+
+.intro-container img {
+    width: 100%;
+}
+
+.intro-container{
+    background-size: cover;
+    background-position: center center;
+}
+.intro-container.learn{
+    background-image: url(../images/learn.jpg);
+ 
+  
+}
+.intro-container.do{
+    background-image: url(../images/do.jpg);
+}
+.intro-container.impact{
+    background-image: url(../images/impact.jpg);
+}
+.intro-content{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: .5rem;
+    /* text-align: center; */
+    color: #fff;
+}
+.intro-container .intro-text{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 0 40px rgba(0, 0, 0, 0.466);
+}
+
+
+.intro-container .intro-text-sub{
+    padding-right: .5rem;
+}
+
+
+.intro-btn{
+    width: 100%;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .8rem;
+    transition: all .3s;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+  
         .intro-btn:hover {
             background-color: #fff;
             text-decoration: none;
             color: #f4001e;
         }
-        /* Carousel control override */
-        /* .carousel-control-prev button, .carousel-control-next button{
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    border: 0;
-    background-color: rgba(0, 0, 0, 0);
-} */
+       
         
         .carousel-indicators li {
             width: 50px;
         }
+
         /*--------------------------------------------
     FOOTER
 ----------------------------------------------*/
-        
-        .main-footer {
-            background-color: #ffa000;
-            font-size: .8rem;
-            padding-top: 3rem;
-            color: #272727;
-        }
-        
-        .foot-lead {
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            margin-bottom: .5rem;
-        }
-        
-        .foot-nav .nav-item {
-            display: block;
-        }
-        
-        .foot-nav .nav-link {
-            display: inline-block;
-            padding: 0;
-            margin-bottom: 4px;
-            color: #000000;
-        }
-        
-        .foot-nav .nav-link:hover {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.404);
-        }
-        
-        .copyright {
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+
+.main-footer {
+    background-color: #ffa000;
+    font-size: 1rem;
+    padding-top: 3rem;
+    color: #272727;
+    
+}
+
+.foot-lead{
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: .5rem;
+}
+
+.foot-nav .nav-item{
+    display: block;
+}
+.foot-nav .nav-link{
+   display: inline-block;
+   padding: 0;
+   margin-bottom: 10px;
+   color: #000000;
+   font-size: 1rem;
+}
+.foot-nav .nav-link:hover{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+}
+
+.copyright{
+     border-top: 1px solid rgba(0, 0, 0, 0.1);
+     text-align: center;
+}
+
         /*--------------------------------------------
     PAGE CONTENT
 ----------------------------------------------*/
