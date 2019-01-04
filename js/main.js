@@ -17,9 +17,10 @@ function scrollFunction() {
 $(document).ready(function() {
     $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 10,
         nav: false,
+        margin: 10,
         // stagePadding: 25,
+        center: true,
         animateIn: true,
         responsive: {
             0: {
@@ -29,7 +30,7 @@ $(document).ready(function() {
                 items: 2
             },
             1000: {
-                items: 3
+                items: 4
             }
 
         }
