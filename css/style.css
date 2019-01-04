@@ -291,7 +291,8 @@
             
         }
         .work-item .card{
-            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 6px 13px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.054), 0 6px 20px 0 rgba(0, 0, 0, 0.034);
+            position: relative;
 
         }
         .work-item img{
@@ -309,8 +310,45 @@
             color: #5d5d5d;
             cursor: pointer;
         }
+       .card-overlay{
+           position: absolute;
+           top: 0;
+           left: 0;
+           min-width: 100%;
+           height: 100%;
+           background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            color: #fff;
+            display: none;
+       }
+
+       .card-overlay button.close{
+           font-size: 1.5rem;
+           color: #fff;
+           opacity: 1;
+           text-shadow: none;
+       }
+       .card-overlay button.close:hover{
+          color: #fff !important;
+       }
+       .card-overlay .card-title{
+           color: #ffa000;
+           font-weight: 700;
+           margin-bottom: 0;
+       }
        
-        
+       .card-overlay .overlay-content{
+           font-size: 1rem;
+           padding: 1rem 0;
+       }
+
+       .overlay-footer a{
+           color: #ffa000;
+           font-size: 1rem;
+           font-weight: 400;
+           
+       }
+       
         
         /*--------------------------------------------
    CAROUSEL style
