@@ -21,9 +21,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-    <!-- owl carousel -->
-    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+   
 </head>
 
 <body>
@@ -286,7 +284,118 @@
                 </div>
             </section>
 
+            <section id="recent-work" class="page-content bg-white page-content-recent-work">
+                <div class="container">
+                    <div class="page-content-intro">
+                        <h1>Recent Works</h1>
+                    </div>
 
+                    <div class="page-content-body">
+                        <div class="works-container">
+
+                            <!-- FILTER BUTTONS  -->
+                            <div class=" works-filter-group">
+    
+                                <div class="filter-top">
+                                    <p class="text-center">Our experience and expatiates spans across different sector and categories</p>
+                                </div>
+    
+                                <div class="filter-btn-group text-center" role="group" aria-label="filter buttons">
+                                    <button class="btn filter-btn  active" data-filter="all">All</button>
+                                    <button class="btn filter-btn" data-filter="website">Website</button>
+                                    <button class="btn filter-btn" data-filter="template">Templates</button>
+                                    <button class="btn filter-btn" data-filter="branding">Branding</button> 
+                                    <button class="btn filter-btn" data-filter="app">Mobile app</button>
+                                </div>
+                            </div>
+
+                            <!-- FILTER CARDS -->
+                            <div class="works-card">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6  work website template">
+                                        <div class="work-item">
+                                            <div class="card">
+                                                <img src="images/work-1.jpg" class="card-img-top" alt="work">
+                                                <div class="card-body">
+                                                    <span class="card-title d-block">
+                                                        <span>Healthcare</span>
+                                                        <i class="fa fa-info float-right info-extra"></i>
+                                                    </span>
+                                                    <p>Website</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 work template app">
+                                        <div class="work-item ">
+                                            <div class="card">
+                                                <img src="images/work-1.jpg" class="card-img-top" alt="work">
+                                                <div class="card-body">
+                                                    <span class="card-title d-block">
+                                                        <span>Healthcare</span>
+                                                        <i class="fa fa-info float-right info-extra"></i>
+                                                    </span>
+                                                    <p>Website</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 work branding">
+                                        <div class="work-item ">
+                                            <div class="card">
+                                                <img src="images/work-1.jpg" class="card-img-top" alt="work">
+                                                <div class="card-body">
+                                                    <span class="card-title d-block">
+                                                        <span>Healthcare</span>
+                                                        <i class="fa fa-info float-right info-extra"></i>
+                                                    </span>
+                                                    <p>Website</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 work app website">
+                                        <div class="work-item ">
+                                            <div class="card">
+                                                <img src="images/work-1.jpg" class="card-img-top" alt="work">
+                                                <div class="card-body">
+                                                    <span class="card-title d-block">
+                                                        <span>Healthcare</span>
+                                                        <i class="fa fa-info float-right info-extra"></i>
+                                                    </span>
+                                                    <p>Website</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 work branding template">
+                                        <div class="work-item ">
+                                            <div class="card">
+                                                <img src="images/work-1.jpg" class="card-img-top" alt="work">
+                                                <div class="card-body">
+                                                    <span class="card-title d-block">
+                                                        <span>Healthcare</span>
+                                                        <i class="fa fa-info float-right info-extra"></i>
+                                                    </span>
+                                                    <p>Website</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         </main>
 
@@ -405,8 +514,51 @@
 
     <!-- bootstrap js -->
     <script src="js/main.js"></script>
-    <!-- Owl carousel -->
-    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+ 
+
+
+    <!-- Work Portfolio script -->
+    <script>
+        
+        $(document).ready(function () {
+            
+            let $filterBtn = $('.filter-btn');
+            let $workItem = $('.work');
+            let selector = "all";
+
+           
+
+            // INITIAL PAGE LOAD FILTER
+          
+            
+            
+            $filterBtn.click(function () {
+
+             // SET FILTER BTN ACTIVE
+                $('.filter-btn.active').removeClass('active');
+                $(this).addClass('active');
+
+            // GET FILTER SELECTOR
+
+                selector = $(this).data('filter');
+
+                $workItem.hide();
+
+                if($workItem.hasClass(selector)){
+
+                    $('.work.'+selector).fadeIn(200);
+                }
+                if(selector === "all"){
+                    $workItem.fadeIn(200);
+                }
+
+            });
+
+
+
+        })
+    
+    </script>
 </body>
 
 </html>
