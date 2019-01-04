@@ -20,6 +20,7 @@ $(document).ready(function() {
         nav: false,
         margin: 10,
         // stagePadding: 25,
+        center: true,
         animateIn: true,
         responsive: {
             0: {
