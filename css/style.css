@@ -222,7 +222,7 @@
         }
         /* summary card */
         
-        .page-content-summary-card {
+        .page-content-summary-card, .page-content-recent-work {
             background-color: #f2f6f7;
         }
         
@@ -288,8 +288,12 @@
         .work-item{
             padding: 0;
             margin-bottom: .5rem;
+            
         }
-        
+        .work-item .card{
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.16), 0 6px 13px 0 rgba(0, 0, 0, 0.12);
+
+        }
         .work-item img{
             height: 100%;
             width: 100%;
