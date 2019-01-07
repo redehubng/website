@@ -21,7 +21,11 @@
         /*--------------------------------------------
     NAVBAR
 ----------------------------------------------*/
-        
+        nav.navbar .container{
+                margin-left: 0;
+                margin-right: 0;
+                max-width: 100% !important;
+            }
         .main-nav {
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0));
             border-bottom: 1px solid rgba(255, 255, 255, .9) !important;
@@ -31,7 +35,22 @@
             z-index: 100;
             width: 100%;
         }
-        
+
+        .navbar-brand { 
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+        .navbar-toggler{
+            margin-right: 1rem;
+        }
+        .navbar-nav .nav-link {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+        .main-nav-dark{
+            background: rgba(0, 0, 0, 0.926) !important;
+        }
+
         .main-nav a {
             color: #dbdbdb;
             font-weight: lighter;
@@ -42,15 +61,16 @@
         }
         
         .main-nav a.dropdown-item {
-            color: #666 !important;
+            color: #fff !important;
         }
         
         .main-nav .dropdown-menu {
             top: 90%;
+            background: rgba(0, 0, 0, 0.034);
         }
         
         .main-nav .dropdown-menu::before {
-            content: "";
+            
             top: -34px;
             left: 11%;
             position: absolute;
@@ -62,13 +82,17 @@
         .main-nav .social-link a {
             color: #fff;
             font-size: 14px;
+            display: none;
         }
         
         .main-nav .main-link a:hover {
             color: #fff;
-            border-bottom: 2px solid #fff;
+           background: #000;
             /* font-weight: 800; */
         }
+           .navbar-collapse{
+                border-top: 1px solid rgba(255, 255, 255, 0.96);
+            }
         /*--------------------------------------------
     INTRO
 ----------------------------------------------*/
@@ -298,7 +322,7 @@
         .work-item img{
             height: 100%;
             width: 100%;
-            max-width: 320px;
+            
         }
         .work-item .card-title{
             font-size: 1.2rem;
@@ -430,8 +454,7 @@
                 padding: 1rem 2rem;
                 font-size: 1rem;
             }
-            
-        
+        }
         @media (min-width: 992px) {
             .work-item{
                 padding: 1rem;
@@ -439,6 +462,47 @@
             .work-item .card-title{
                 font-size: 24px;
                 line-height: 30px !important;
+            }
+            nav.navbar .container{
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 960px;
+            }
+            .navbar-toggler{
+                margin-right: 0;
+            }
+            .navbar-brand { 
+                margin-right: 1rem;
+            }
+            .navbar-collapse{
+                border-top: none;
+                
+            }
+            .navbar-nav .nav-link {
+                padding-right: 0;
+                padding-left: 0;
+
+            }
+            .main-nav .main-link a:hover {
+             
+                border-bottom: 2px solid #fff;
+                /* font-weight: 800; */
+            }
+            .main-nav a.dropdown-item {
+                color: #666 !important;
+            }
+            .main-nav .dropdown-menu{
+               background: #fff;
+                
+            }
+            .main-nav .dropdown-menu::before {
+                content: " ";
+                
+            }
+
+            .main-nav .social-link a {
+               
+                display: inline;
             }
         }
         

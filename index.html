@@ -36,7 +36,8 @@
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="images/logo-text-white.png" alt="redehub logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <!-- <i class="fas fa-bars  fa-lg text-white  "></i> -->
+                    <img src="images/navbar-toggle.svg" width="25" height="20" alt="">
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -337,6 +338,7 @@
                                                     <div class="overlay-footer">
                                                         <a href="#">view full project</a>
                                                     </div>
+                                                    
                                                 </div>
                                             </div>
 
@@ -600,6 +602,13 @@
     <script>
         
         $(document).ready(function () {
+
+
+            // navbar change
+
+            $('.navbar-toggler').on('click', function(){
+                $('.navbar').toggleClass('main-nav-dark')
+            });
             
             let $filterBtn = $('.filter-btn');
             let $workItem = $('.work');
