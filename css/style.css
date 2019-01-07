@@ -222,7 +222,7 @@
         }
         /* summary card */
         
-        .page-content-summary-card {
+        .page-content-summary-card, .page-content-recent-work {
             background-color: #f2f6f7;
         }
         
@@ -255,6 +255,101 @@
         .summary-card-body img {
             height: 150px;
         }
+
+
+/* RECENT WORK STYLE */
+
+        .works-container{
+            position: relative;
+        }
+
+        .works-filter-group .filter-top{
+            font-size: 1rem;
+        }
+
+        
+        .filter-btn{
+            padding: 4px 12px;
+            margin:  5px;
+            background-color: rgba(0, 0, 0, 0.068);
+            color: #202020;
+        }
+
+        .filter-btn:hover, .filter-btn.active{
+           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+            background: #ffa000;
+        }
+
+
+        .works-card{
+            margin-top: 50px;
+        }
+       
+        .work-item{
+            padding: 0;
+            margin-bottom: .5rem;
+            
+        }
+        .work-item .card{
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.054), 0 6px 20px 0 rgba(0, 0, 0, 0.034);
+            position: relative;
+
+        }
+        .work-item img{
+            height: 100%;
+            width: 100%;
+            max-width: 320px;
+        }
+        .work-item .card-title{
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 30px !important;
+            color: #202020;
+        }
+        .work-item .card-title .info-extra{
+            color: #5d5d5d;
+            cursor: pointer;
+        }
+       .card-overlay{
+           position: absolute;
+           top: 0;
+           left: 0;
+           min-width: 100%;
+           height: 100%;
+           background-color: rgba(0, 0, 0, 0.8);
+            padding: 1rem;
+            color: #fff;
+            display: none;
+       }
+
+       .card-overlay button.close{
+           font-size: 1.5rem;
+           color: #fff;
+           opacity: 1;
+           text-shadow: none;
+       }
+       .card-overlay button.close:hover{
+          color: #fff !important;
+       }
+       .card-overlay .card-title{
+           color: #ffa000;
+           font-weight: 700;
+           margin-bottom: 0;
+       }
+       
+       .card-overlay .overlay-content{
+           font-size: 1rem;
+           padding: 1rem 0;
+       }
+
+       .overlay-footer a{
+           color: #ffa000;
+           font-size: 1rem;
+           font-weight: 400;
+           
+       }
+       
+        
         /*--------------------------------------------
    CAROUSEL style
 ----------------------------------------------*/
@@ -344,9 +439,16 @@
             box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
             filter: grayscale(0)
         }
+
+
+
         /*--------------------------------------------
     HELPER CLASSES
 ----------------------------------------------*/
+
+
+
+
         /*--------------------------------------------
     MEDIA QUERIES
 ----------------------------------------------*/
@@ -372,6 +474,12 @@
             .page-content {
                 padding: 3rem;
             }
+             .filter-btn{
+                padding: .8rem 1.6rem;
+                margin:  .5rem;
+               
+            }
+            
         }
         
         @media (min-width: 768px) {
@@ -383,9 +491,17 @@
                 padding: 1rem 2rem;
                 font-size: 1rem;
             }
-        }
+            
         
-        @media (min-width: 992px) {}
+        @media (min-width: 992px) {
+            .work-item{
+                padding: 1rem;
+            }
+            .work-item .card-title{
+                font-size: 24px;
+                line-height: 30px !important;
+            }
+        }
         
         @media (min-width: 1200px) {
             .navbar-expand-lg .navbar-nav.main-link .nav-link {
@@ -396,3 +512,4 @@
                 padding-left: .8rem !important;
             }
         }
+    }
