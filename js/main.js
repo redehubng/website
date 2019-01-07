@@ -16,18 +16,19 @@ function scrollFunction() {
 //owl carousel function
 $(document).ready(function() {
     $('.owl-carousel').owlCarousel({
+        center: true,
         loop: true,
         nav: false,
-        margin: 10,
+
         // stagePadding: 25,
-        center: true,
+
         animateIn: true,
         responsive: {
             0: {
                 items: 1
             },
             600: {
-                items: 2
+                items: 3
             },
             1000: {
                 items: 4
