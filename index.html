@@ -35,7 +35,7 @@
         <nav class="navbar  navbar-expand-lg  main-nav" id="topnav">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="images/logo-text-white.png" alt="redehub logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler border p-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <!-- <i class="fas fa-bars  fa-lg text-white  "></i> -->
                     <img src="images/navbar-toggle.svg" width="25" height="20" alt="">
                 </button>
@@ -49,15 +49,14 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle"  href="#doDrodown" role="button" id="mobDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Do
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu"  aria-labelledby="mobDropDown">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another</a>
                                 <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                              
                             </div>
                         </li>
                         <li class="nav-item">
@@ -86,6 +85,16 @@
                     </ul>
                 </div>
 
+            </div>
+            <div class="dropdown-wrap" id="doDropdown">
+
+                <div class=" dropdown-m  " aria-labelledby="doDropdown" >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
             </div>
         </nav>
 
@@ -304,7 +313,7 @@
                                 <div class="filter-btn-group text-center" role="group" aria-label="filter buttons">
                                     <button class="btn filter-btn  active" data-filter="all">All</button>
                                     <button class="btn filter-btn" data-filter="website">Website</button>
-                                    <button class="btn filter-btn" data-filter="template">Templates</button>
+                                    <!-- <button class="btn filter-btn" data-filter="template">Templates</button> -->
                                     <button class="btn filter-btn" data-filter="branding">Branding</button> 
                                     <button class="btn filter-btn" data-filter="app">Mobile app</button>
                                 </div>
@@ -316,13 +325,13 @@
                                     <div class="col-md-4 col-sm-6  work website template">
                                         <div class="work-item">
                                             <div class="card">
-                                                <img src="images/work-1.jpg" class="card-img-top" alt="work">
+                                                <img src="images/axya-web.png" class="card-img-top" alt="work">
                                                 <div class="card-body">
                                                     <span class="card-title d-block">
-                                                        <span class="title">Healthcare</span>
+                                                        <span class="title">Axya, Healthcare</span>
                                                         <i class="fa fa-info fa-sm float-right info-extra"></i>
                                                     </span>
-                                                    <p class="m-0 card-filter">Website, Template</p>
+                                                    <p class="m-0 card-filter">Website</p>
                                                 </div>
                                                 <div class="card-overlay">
                                                     <button type="button" class="close" aria-label="Close">
@@ -344,16 +353,16 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-sm-6  work app website">
+                                    <div class="col-md-4 col-sm-6  work  branding">
                                         <div class="work-item">
                                             <div class="card">
-                                                <img src="images/work-app.jpg" class="card-img-top" alt="work">
+                                                <img src="images/chocolate-oreo-brand.jpg" class="card-img-top" alt="work">
                                                 <div class="card-body">
                                                     <span class="card-title d-block">
-                                                        <span class="title">Library</span>
+                                                        <span class="title">ChocolateOreo Vlog</span>
                                                         <i class="fa fa-info fa-sm float-right info-extra"></i>
                                                     </span>
-                                                    <p class="m-0 card-filter">Website, Mobile App</p>
+                                                    <p class="m-0 card-filter">Branding</p>
                                                 </div>
                                                 <div class="card-overlay">
                                                     <button type="button" class="close" aria-label="Close">
@@ -407,10 +416,10 @@
                                     <div class="col-md-4 col-sm-6  work website">
                                         <div class="work-item">
                                             <div class="card">
-                                                <img src="images/work-web-2.jpg" class="card-img-top" alt="work">
+                                                <img src="images/diwa-web.jpg" class="card-img-top" alt="work">
                                                 <div class="card-body">
                                                     <span class="card-title d-block">
-                                                        <span class="title">E-commerce</span>
+                                                        <span class="title">Diwafrica</span>
                                                         <i class="fa fa-info fa-sm float-right info-extra"></i>
                                                     </span>
                                                     <p class="m-0 card-filter">Website</p>
@@ -434,16 +443,137 @@
 
                                         </div>
                                     </div>
-                                    <div class="col-md-4 col-sm-6  work template branding">
+                                    <div class="col-md-4 col-sm-6  work  branding">
                                         <div class="work-item">
                                             <div class="card">
-                                                <img src="images/work-temp.jpg" class="card-img-top" alt="work">
+                                                <img src="images/savoury-brand.jpg" class="card-img-top" alt="work">
                                                 <div class="card-body">
                                                     <span class="card-title d-block">
                                                         <span class="title">Brochure</span>
                                                         <i class="fa fa-info fa-sm float-right info-extra"></i>
                                                     </span>
                                                     <p class="m-0 card-filter">Template, Branding</p>
+                                                </div>
+                                                <div class="card-overlay">
+                                                    <button type="button" class="close" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <span class="card-title d-block">
+                                                       
+                                                    </span>
+                                                    <p class="m-0 card-filter"></p>
+                                                    <div class="overlay-content">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quia aliquid minima blanditiis repudiandae omnis, eligendi reiciendis eius aspernatur velit, fugiat sunt doloribus perferendis incidunt cum laudantium? Quaerat, fugiat dignissimos?
+                                                    </div>
+                                                    <div class="overlay-footer">
+                                                        <a href="#">view full project</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                  
+                                    <div class="col-md-4 col-sm-6  work  website">
+                                        <div class="work-item">
+                                            <div class="card">
+                                                <img src="images/ilmihouse-web.jpg" class="card-img-top" alt="work">
+                                                <div class="card-body">
+                                                    <span class="card-title d-block">
+                                                        <span class="title">Ilmihouse</span>
+                                                        <i class="fa fa-info fa-sm float-right info-extra"></i>
+                                                    </span>
+                                                    <p class="m-0 card-filter">website</p>
+                                                </div>
+                                                <div class="card-overlay">
+                                                    <button type="button" class="close" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <span class="card-title d-block">
+                                                       
+                                                    </span>
+                                                    <p class="m-0 card-filter"></p>
+                                                    <div class="overlay-content">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quia aliquid minima blanditiis repudiandae omnis, eligendi reiciendis eius aspernatur velit, fugiat sunt doloribus perferendis incidunt cum laudantium? Quaerat, fugiat dignissimos?
+                                                    </div>
+                                                    <div class="overlay-footer">
+                                                        <a href="#">view full project</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6  work  website">
+                                        <div class="work-item">
+                                            <div class="card">
+                                                <img src="images/hhp-web.jpg" class="card-img-top" alt="work">
+                                                <div class="card-body">
+                                                    <span class="card-title d-block">
+                                                        <span class="title">HHP</span>
+                                                        <i class="fa fa-info fa-sm float-right info-extra"></i>
+                                                    </span>
+                                                    <p class="m-0 card-filter">website</p>
+                                                </div>
+                                                <div class="card-overlay">
+                                                    <button type="button" class="close" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <span class="card-title d-block">
+                                                       
+                                                    </span>
+                                                    <p class="m-0 card-filter"></p>
+                                                    <div class="overlay-content">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quia aliquid minima blanditiis repudiandae omnis, eligendi reiciendis eius aspernatur velit, fugiat sunt doloribus perferendis incidunt cum laudantium? Quaerat, fugiat dignissimos?
+                                                    </div>
+                                                    <div class="overlay-footer">
+                                                        <a href="#">view full project</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6  work  branding">
+                                        <div class="work-item">
+                                            <div class="card">
+                                                <img src="images/preshy-brand.jpg" class="card-img-top" alt="work">
+                                                <div class="card-body">
+                                                    <span class="card-title d-block">
+                                                        <span class="title">Preshy shots</span>
+                                                        <i class="fa fa-info fa-sm float-right info-extra"></i>
+                                                    </span>
+                                                    <p class="m-0 card-filter">Branding</p>
+                                                </div>
+                                                <div class="card-overlay">
+                                                    <button type="button" class="close" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <span class="card-title d-block">
+                                                       
+                                                    </span>
+                                                    <p class="m-0 card-filter"></p>
+                                                    <div class="overlay-content">
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quia aliquid minima blanditiis repudiandae omnis, eligendi reiciendis eius aspernatur velit, fugiat sunt doloribus perferendis incidunt cum laudantium? Quaerat, fugiat dignissimos?
+                                                    </div>
+                                                    <div class="overlay-footer">
+                                                        <a href="#">view full project</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6  work  branding">
+                                        <div class="work-item">
+                                            <div class="card">
+                                                <img src="images/verdland-brand.jpg" class="card-img-top" alt="work">
+                                                <div class="card-body">
+                                                    <span class="card-title d-block">
+                                                        <span class="title">Verdland Electric</span>
+                                                        <i class="fa fa-info fa-sm float-right info-extra"></i>
+                                                    </span>
+                                                    <p class="m-0 card-filter">Branding</p>
                                                 </div>
                                                 <div class="card-overlay">
                                                     <button type="button" class="close" aria-label="Close">
@@ -620,11 +750,11 @@
             
             $filterBtn.click(function () {
 
-             // SET FILTER BTN ACTIVE
+                 // SET FILTER BTN ACTIVE
                 $('.filter-btn.active').removeClass('active');
                 $(this).addClass('active');
 
-            // GET FILTER SELECTOR
+                // GET FILTER SELECTOR
 
                 selector = $(this).data('filter');
 
@@ -657,9 +787,15 @@
                 $(this).parent().slideUp();
             });
 
+            // limit overlay content text
+            $(".overlay-content").each(function (i) {
+                len = $(this).text().length;
+                if (len > 280) {
+                    $(this).text($(this).text().substr(0, 280) + '...');
+                }
+            });
 
-        })
-    
+        });
     </script>
 
   
