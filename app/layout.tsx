@@ -30,7 +30,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={jakarta.variable}>
-      <body>
+      {/* Browser extensions (e.g. Grammarly) inject attributes on <body> before hydration. */}
+      <body suppressHydrationWarning>
         <a className="skip-link" href="#main">
           Skip to content
         </a>
