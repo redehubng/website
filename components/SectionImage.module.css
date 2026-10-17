@@ -1,0 +1,49 @@
+.frame {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-l);
+  background: var(--cream-2);
+  container-type: inline-size;
+}
+
+.learn { background: var(--learn-tint); }
+.do { background: var(--do-tint); }
+.impact { background: #2b1e10; color: var(--cream); }
+.neutral { background: var(--cream-2); }
+
+.img { object-fit: cover; }
+
+/* Placeholder: says exactly what photo belongs here. */
+.placeholder {
+  position: absolute;
+  inset: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 18px;
+  border: 1.5px dashed currentColor;
+  border-radius: calc(var(--radius-l) - 8px);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--body);
+  opacity: 0.85;
+}
+.impact .placeholder { color: #d8cfbe; }
+@container (max-width: 300px) {
+  .placeholder { inset: 8px; padding: 12px; gap: 4px; font-size: 11.5px; line-height: 1.35; justify-content: flex-start; overflow: hidden; }
+  .placeholder strong { font-size: 12.5px; }
+}
+.placeholder strong { font-size: 14px; color: inherit; }
+
+.credit {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgb(26 18 8 / 0.6);
+  color: #fff;
+  font-size: 11px;
+}
